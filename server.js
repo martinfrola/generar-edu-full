@@ -9,11 +9,11 @@ const mercadopago = require("mercadopago");
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Have Node serve the files for our built React app
-app.use(express.static(path.resolve(__dirname, "/generar-edu/build")));
+app.use(express.static(path.resolve(__dirname, "./generar-edu/build")));
 
 // All other GET requests not handled before will return our React app
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/generar-edu/build", "index.html"));
+  res.sendFile(path.join(__dirname, "./generar-edu/build", "index.html"));
 });
 
 // Agrega credenciales
