@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.55e10158.chunk.css",
+    "main.js": "/static/js/main.75861a42.chunk.js",
+    "main.js.map": "/static/js/main.75861a42.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.320a2dcd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.320a2dcd.js.map",
+    "static/js/2.d5aae8d9.chunk.js": "/static/js/2.d5aae8d9.chunk.js",
+    "static/js/2.d5aae8d9.chunk.js.map": "/static/js/2.d5aae8d9.chunk.js.map",
+    "static/js/3.a6bbed93.chunk.js": "/static/js/3.a6bbed93.chunk.js",
+    "static/js/3.a6bbed93.chunk.js.map": "/static/js/3.a6bbed93.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.55e10158.chunk.css.map": "/static/css/main.55e10158.chunk.css.map",
+    "static/js/2.d5aae8d9.chunk.js.LICENSE.txt": "/static/js/2.d5aae8d9.chunk.js.LICENSE.txt",
+    "static/media/backgrounds.css": "/static/media/slide3.0ae748f6.jpg",
+    "static/media/icono-coaching.5c51b02a.svg": "/static/media/icono-coaching.5c51b02a.svg",
+    "static/media/icono-educacion.57ab0bcf.svg": "/static/media/icono-educacion.57ab0bcf.svg",
+    "static/media/icono-profesora.1e5d3c4b.svg": "/static/media/icono-profesora.1e5d3c4b.svg",
+    "static/media/instagram.75fcbfd6.png": "/static/media/instagram.75fcbfd6.png",
+    "static/media/play.a2333b45.png": "/static/media/play.a2333b45.png",
+    "static/media/video-example.fd9b48e0.mp4": "/static/media/video-example.fd9b48e0.mp4",
+    "static/media/wave.f3cbd512.svg": "/static/media/wave.f3cbd512.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.320a2dcd.js",
+    "static/js/2.d5aae8d9.chunk.js",
+    "static/css/main.55e10158.chunk.css",
+    "static/js/main.75861a42.chunk.js"
+  ]
+}

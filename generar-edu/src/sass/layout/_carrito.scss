@@ -1,0 +1,36 @@
+.carrito {
+  min-height: calc(100vh - 54px - 300px);
+  margin-top: 56px;
+}
+
+.tacho-btn {
+  height: 1.1rem;
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  @include tablet {
+    height: 1.3;
+  }
+}
+
+.card-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+
+  height: 100px;
+  @include tablet {
+    height: 120px;
+  }
+}
+
+.img-curso-carrito {
+  height: 98px;
+
+  @include tablet {
+    height: 118px;
+  }
+}

@@ -1,0 +1,36 @@
+.img-renata {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 0;
+  .content-renata {
+    padding-left: 0;
+    text-align: center;
+  }
+  img {
+    width: 12rem;
+    height: 12rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 3rem;
+    .content-renata {
+      padding-left: 3rem;
+      text-align: start;
+    }
+    img {
+      margin-bottom: 0;
+      width: 15rem;
+      height: 15rem;
+    }
+  }
+}
+
+.skills {
+  img {
+    height: 7rem;
+  }
+}

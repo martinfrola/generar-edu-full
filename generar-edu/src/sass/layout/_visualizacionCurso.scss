@@ -1,0 +1,79 @@
+.view-curso {
+  margin-top: 56px;
+}
+
+.principal-view-curso {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  .lista-videos {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  @include tablet {
+    flex-direction: row-reverse;
+    height: calc(100vh - 56px);
+    .lista-videos {
+      min-width: 20vw;
+      max-height: calc(100vh - 56px);
+      overflow-y: auto;
+    }
+
+    video {
+      height: 100%;
+      width: 100%;
+      max-width: 80vw;
+      background: rgb(51, 51, 51);
+    }
+  }
+}
+.botonera-lista {
+  width: 100%;
+  text-align: end;
+}
+.arrow-botonera {
+  width: 35px;
+}
+
+.curso-item {
+  opacity: 1;
+}
+
+.hide-video {
+  opacity: 0;
+}
+
+.card-comentario {
+  box-shadow: 0 7px 30px rgba(73, 73, 73, 0.411);
+  width: 100%;
+  @include tablet {
+    width: 75%;
+  }
+}
+.content-comentario {
+  img {
+    width: 40px;
+    height: auto;
+
+    border-radius: 50%;
+  }
+}
+
+.mostrar-formulario {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  z-index: 999;
+}
+
+.select-video {
+}
+.comentarios {
+  max-height: 800px;
+  overflow-y: auto;
+}

@@ -1,0 +1,24 @@
+.slide-1 {
+  background-image: url(./img/slide1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide-2 {
+  background-image: url(./img/slide2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide-3 {
+  background-image: url(./img/slide3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-curso {
+  background-image: url(./img/curso-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

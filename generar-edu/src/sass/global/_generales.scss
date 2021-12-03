@@ -1,0 +1,30 @@
+.text-header{
+    font-size: $header-mb !important;
+    @include tablet {
+        font-size: $header !important;
+    }
+}
+.text-title{
+    font-size: $title-mb !important;
+    @include tablet {
+        font-size: $title !important;
+    }
+}
+.text-subtitle{
+    font-size: $subtitle-mb !important;
+    @include tablet {
+        font-size: $subtitle !important;
+    }
+}
+.text-text{
+    font-size: $text-mb !important;
+    @include tablet {
+        font-size: $text !important;
+    }
+}
+.text-details{
+    font-size: $details-mb !important;
+    @include tablet {
+        font-size: $details !important;
+    }
+}

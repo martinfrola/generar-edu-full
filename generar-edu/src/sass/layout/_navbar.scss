@@ -1,0 +1,32 @@
+.cart-icon {
+  position: relative;
+  margin-top: 0.9rem;
+  img {
+    height: 1.5rem;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.navigation {
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+  top: 0;
+  a {
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.cart-products {
+  position: absolute;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  top: -5px;
+  right: -7px;
+}

@@ -1,0 +1,15 @@
+$oscuro: #852747;
+$primario: #a2416b;
+$secundario: #f78a8a;
+$claro: #fff1e7;
+
+$dark: $oscuro;
+$primary: $primario;
+$secondary: $secundario;
+$light: $claro;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+$font-family-sans-serif: "Montserrat", sans-serif;
+$font-family-monospace: "Montserrat", sans-serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

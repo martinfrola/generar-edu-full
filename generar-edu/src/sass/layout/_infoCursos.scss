@@ -1,0 +1,52 @@
+.header-curso {
+  height: 40vh;
+  h1 {
+    width: 100%;
+    @include tablet {
+      width: 70%;
+    }
+  }
+}
+.header-curso_title {
+  padding-top: 10vh;
+}
+
+.info-content {
+  width: 100%;
+  @include tablet {
+    width: 60%;
+  }
+}
+
+.curso-main {
+  position: relative;
+}
+
+.compra-content {
+  position: unset;
+  padding-bottom: 2rem;
+  @include tablet {
+    padding-bottom: 2rem;
+    position: absolute;
+    top: -25vh;
+    right: 0;
+    width: 20vw;
+    min-width: 250px;
+  }
+
+  border-radius: 0.5rem;
+  box-shadow: 0px 15px 50px rgba(190, 107, 107, 0.719);
+}
+
+.video-trailer {
+  video {
+    width: 90%;
+    @include tablet {
+      width: 80vh;
+    }
+  }
+}
+
+.info-curso {
+  margin-top: 56px;
+}

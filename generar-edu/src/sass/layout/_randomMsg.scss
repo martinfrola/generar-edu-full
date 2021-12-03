@@ -1,0 +1,42 @@
+.msg-content {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 7px;
+  position: relative;
+  .msg-text {
+    text-align: center;
+    padding-top: 5rem;
+    padding-left: 0;
+    margin: 0 5px;
+  }
+  img {
+    left: 0rem;
+    right: 0;
+    top: -17rem;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    height: 8rem;
+    border-radius: 50%;
+  }
+
+  @include tablet {
+    max-width: 45rem;
+    width: 70%;
+    .msg-text {
+      padding-left: 8rem;
+      margin-right: 1rem;
+      padding-top: 1rem;
+      text-align: start;
+    }
+    img {
+      left: -5rem;
+      right: 40rem;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: 12rem;
+    }
+  }
+}

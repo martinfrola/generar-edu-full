@@ -1,0 +1,12 @@
+.bg-image {
+  height: calc(100vh - 56px);
+}
+.slide-text {
+  @include tablet {
+    top: 50%;
+  }
+}
+
+.carousel {
+  margin-top: 54px;
+}

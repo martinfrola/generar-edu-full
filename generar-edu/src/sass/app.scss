@@ -1,0 +1,22 @@
+//GLOBAL IMPORTS
+@import "./global/variables.scss";
+@import "./global/mixins.scss";
+@import "./global/generales.scss";
+@import "./global/animations.scss";
+
+//LAYOUT IMPORTS
+@import "./layout/navbar.scss";
+@import "./layout/header.scss";
+@import "./layout/cardCurso.scss";
+@import "./layout/sobreNosotros.scss";
+@import "./layout/randomMsg.scss";
+@import "./layout/footer.scss";
+@import "./layout/gotop.scss";
+@import "./layout/contacto.scss";
+@import "./layout/login.scss";
+@import "./layout/infoCursos.scss";
+@import "./layout/carrito.scss";
+@import "./layout/misCursos.scss";
+@import "./layout/visualizacionCurso.scss";
+@import "./layout/verificacionEmail.scss";
+@import "./layout/finpago.scss";
