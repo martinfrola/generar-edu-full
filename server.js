@@ -36,8 +36,8 @@ app.post("/pagos/", (req, res) => {
     ],
     binary_mode: true,
     back_urls: {
-      success: "http://localhost:3000/finpago",
-      failure: "http://localhost:3000/finpago",
+      success: "https://generar-edu.herokuapp.com/finpago",
+      failure: "https://generar-edu.herokuapp.com/finpago",
     },
     auto_return: "approved",
     payment_methods: {
