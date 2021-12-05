@@ -35,11 +35,9 @@ function Finpago() {
         } else {
           console.log("El pago no fué aprovado");
         }
-
-        console.log(data);
       });
   }, []);
-  console.log(nombreCurso);
+
   //Entro a la base de datos de cursos comprados para ese usuario
   const db = getDatabase();
   const dbRef = ref(db, "permisosUser/" + user);
@@ -49,15 +47,16 @@ function Finpago() {
     get(dbRef).then((snap) => {
       if (snap.exists()) {
         const cursosActuales = snap.val().cursoComprado;
-        const cursosTotales = cursosActuales + "," + cursoComprado;
+        const cursos = cursosActuales + "," + cursoComprado;
         set(dbRef, {
-          cursosTotales,
+          cursos,
         });
 
         //Si no tiene ningún curso agregar el que compró
       } else {
+        const cursos = cursoComprado;
         set(dbRef, {
-          cursoComprado,
+          cursos,
         });
       }
     });

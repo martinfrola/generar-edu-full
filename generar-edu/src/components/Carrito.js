@@ -57,7 +57,7 @@ export default function Carrito(props) {
 
       <div className="text-center w-100">
         {productos.length !== 0 ? (
-          <form action="http://localhost:3001/pagos/" method="POST">
+          <form action="https://generar-edu.herokuapp.com/pagos/" method="POST">
             <input type="hidden" name="title" value={nombreCursos} />
             <input type="hidden" name="price" value={costo} />
             <input type="hidden" name="userId" value={idCursos} />

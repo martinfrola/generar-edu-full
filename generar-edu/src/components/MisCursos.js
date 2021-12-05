@@ -35,7 +35,7 @@ function MisCursos(props) {
     const dbRef = ref(db, "permisosUser/" + userId);
     get(dbRef).then((snap) => {
       if (snap.exists()) {
-        const split = snap.val().cursoComprado.split(",");
+        const split = snap.val().cursos.split(",");
         setCursosUser(split);
       }
     });
