@@ -50,7 +50,7 @@ export default function CardCurso(props) {
             {props.titulo}
           </Card.Title>
           <Card.Text className="text-dark text-details card-curso-description">
-            {props.descripcionCorta}
+            {props.descripcion_corta}
           </Card.Text>
           <div className="text-center">
             <div className="d-flex justify-content-between">
