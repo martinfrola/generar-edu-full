@@ -46,7 +46,7 @@ function Finpago() {
     //Ver si ya tiene algún curso, agregar el nuevo que compró
     get(dbRef).then((snap) => {
       if (snap.exists()) {
-        const cursosActuales = snap.val().cursoComprado;
+        const cursosActuales = snap.val().cursos;
         const cursos = cursosActuales + "," + cursoComprado;
         set(dbRef, {
           cursos,
