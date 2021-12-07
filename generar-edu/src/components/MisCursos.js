@@ -11,6 +11,7 @@ function MisCursos(props) {
   const auth = getAuth();
   const [userId, setUserId] = useState();
   useEffect(() => {
+    window.scrollTo(0, 0);
     //Verifico si hay usuario
     onAuthStateChanged(auth, (user) => {
       console.log(user.uid);

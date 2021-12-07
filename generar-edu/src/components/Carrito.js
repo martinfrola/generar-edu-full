@@ -16,6 +16,8 @@ export default function Carrito(props) {
   const auth = getAuth();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);

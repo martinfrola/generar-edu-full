@@ -6,6 +6,7 @@ export default function CursoInfo() {
   const currentPath = window.location.pathname;
   const idModulo = currentPath.split("/")[2];
   useEffect(() => {
+    window.scrollTo(0, 0);
     const db = getDatabase();
     const dbRef = ref(db, `cursos/modulo-${idModulo}`);
     get(dbRef).then((snap) => {

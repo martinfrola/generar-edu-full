@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import { app } from "../firebase";
 
@@ -7,6 +7,9 @@ import { getFirestore, collection, addDoc } from "firebase/firestore";
 import Swal from "sweetalert2";
 
 function Contacto() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const db = getFirestore();
 
   //HOOK PARA RECOLECTAR LOS CAMPOS PARA CONTACTO

@@ -5,6 +5,9 @@ import SobreNosotros from "../statics/SobreNosotros";
 import RandomMsg from "../statics/RandomMsg";
 
 function Landing() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <React.Fragment>
       <Header />

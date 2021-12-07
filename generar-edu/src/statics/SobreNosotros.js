@@ -4,42 +4,6 @@ import IconoEducacion from "../img/icono-educacion.svg";
 import IconoProfesora from "../img/icono-profesora.svg";
 import IconoCoaching from "../img/icono-coaching.svg";
 export default function SobreNosotros() {
-  window.addEventListener("scroll", animation);
-
-  function animation() {
-    const actives = document.querySelectorAll(".skill");
-    //Si la pantalla es mas grande que 768px:
-    if (window.innerWidth > 768) {
-      if (window.scrollY >= 2100) {
-        //Cuando hago scroll hacia abajo
-        actives.forEach((active) => {
-          active.classList.add("show-animation");
-          active.classList.remove("hide");
-        });
-      } else if (window.scrollY <= 10) {
-        //Cuando hago scroll hacia arriba
-        actives.forEach((active) => {
-          active.classList.remove("show-animation");
-          active.classList.add("hide");
-        });
-      }
-      //Si la pantalla es mas pequeña que 768px:
-    } else {
-      //Cuando hago scroll hacia abajo
-      if (window.scrollY >= 3700) {
-        actives.forEach((active) => {
-          active.classList.add("show-animation");
-          active.classList.remove("hide");
-        });
-      } else if (window.scrollY <= 10) {
-        //Cuando hago scroll hacia arriba
-        actives.forEach((active) => {
-          active.classList.remove("show-animation");
-          active.classList.add("hide");
-        });
-      }
-    }
-  }
   return (
     <React.Fragment>
       <div className="bg-light">
@@ -70,7 +34,7 @@ export default function SobreNosotros() {
         </div>
         <div className="skills container py-5">
           <div className="row">
-            <div className="col-md-4 text-center skill hide">
+            <div className="col-md-4 text-center skill ">
               <img src={IconoEducacion} alt="" />
               <h4 className="text-secondary mt-2 text-subtitle">
                 Constante Formación
@@ -82,7 +46,7 @@ export default function SobreNosotros() {
                 fugit odit, rem sint animi non!
               </p>
             </div>
-            <div className=" col-md-4 text-center skill hide">
+            <div className=" col-md-4 text-center skill ">
               <img src={IconoProfesora} alt="" />
               <h4 className="text-secondary mt-2 text-subtitle">Docente</h4>
               <p className="text-light text-text">
@@ -92,7 +56,7 @@ export default function SobreNosotros() {
                 fugit odit, rem sint animi non!
               </p>
             </div>
-            <div className=" col-md-4 text-center skill hide">
+            <div className=" col-md-4 text-center skill ">
               <img src={IconoCoaching} alt="" />
               <h4 className="text-secondary mt-2 text-subtitle">Coach</h4>
               <p className="text-light text-text">

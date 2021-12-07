@@ -9,6 +9,7 @@ export default function EmailVerification(props) {
 
   const [userData, setUserData] = useState("");
   useEffect(() => {
+    window.scrollTo(0, 0);
     //Verifico si hay usuario
     onAuthStateChanged(auth, (user) => {
       //Si hay usuario..

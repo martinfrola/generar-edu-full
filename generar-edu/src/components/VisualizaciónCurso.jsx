@@ -17,6 +17,7 @@ function VisualizaciónCurso(props) {
   const [videos, setVideos] = useState("");
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     fetch(urlVideos)
       .then((response) => response.json())
       .then((data) => setVideos(data));

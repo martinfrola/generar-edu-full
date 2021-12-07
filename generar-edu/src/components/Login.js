@@ -18,6 +18,7 @@ export default function Login(props) {
   //Consulta a la autenticación de usuario para obtener datos
   const auth = getAuth();
   useEffect(() => {
+    window.scrollTo(0, 0);
     //Verifico si hay usuario
     onAuthStateChanged(auth, (user) => {
       //Si hay usuario..

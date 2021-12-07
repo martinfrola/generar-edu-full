@@ -4,6 +4,7 @@ import { getDatabase, ref, set, get } from "firebase/database";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 function Finpago() {
+  window.scrollTo(0, 0);
   //Identifico al usuario que compró el curso
   const auth = getAuth();
   const [user, setUser] = useState();
