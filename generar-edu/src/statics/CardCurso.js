@@ -6,7 +6,6 @@ import { useCarrito } from "../context/CarritoProvider";
 import { actionTypes, initialCarrito } from "../context/CarritoRedicer";
 
 export default function CardCurso(props) {
-  console.log(props);
   const { portada } = props;
 
   window.addEventListener("scroll", animation);
@@ -29,7 +28,6 @@ export default function CardCurso(props) {
   const [{ productos }, dispatch] = useCarrito();
 
   function addCarrito() {
-    console.log("Click");
     dispatch({
       type: actionTypes.AGREGAR_AL_CARRITO,
       item: {

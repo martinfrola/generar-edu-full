@@ -77,7 +77,7 @@ function Finpago() {
           </p>
         </div>
       ) : (
-        "El pago no fué aprovado"
+        "El pago no fué aprobado"
       )}
     </div>
   );

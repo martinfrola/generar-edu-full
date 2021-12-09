@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Facebook from "../img/facebook.png";
 import Instagram from "../img/instagram.png";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { getDatabase, ref, get } from "firebase/database";
 export default function Footer() {
+  const [dataCursos, setDataCursos] = useState([]);
+
+  const db = getDatabase();
+  useEffect(() => {
+    //ingreso a la base de datos de los cursos
+    const dbRef = ref(db, "cursos/");
+    get(dbRef).then((snap) => {
+      const cursos = Object.values(snap.val());
+
+      if (cursos.length > 0 && cursos.length) {
+        cursos.map((curso) => {
+          setDataCursos((dataCursos) => [...dataCursos, curso]);
+        });
+      }
+    });
+  }, []);
+  console.log(dataCursos);
   return (
     <footer className="bg-primary text-light pt-3">
       <div className="row container m-auto pb-3">
@@ -19,21 +38,18 @@ export default function Footer() {
         <div className="col-md-4 text-center pb-3">
           <h4 className="text-subtitle">Nuestros Cursos</h4>
           <div className="cursos">
-            <a className="text-text text-light" href="/">
-              Modulo 1: curso X
-            </a>
-            <a className="text-text text-light" href="/">
-              Modulo 2: curso Y
-            </a>
-            <a className="text-text text-light" href="/">
-              Modulo 3: curso Z
-            </a>
-            <a className="text-text text-light" href="/">
-              Modulo 4: curso W
-            </a>
-            <a className="text-text text-light" href="/">
-              Modulo 5: curso M
-            </a>
+            {dataCursos.length > 0 &&
+              dataCursos.map((curso, i) => {
+                return (
+                  <a
+                    key={i}
+                    className="text-text text-light"
+                    href={`/modulo/${curso.idModulo}`}
+                  >
+                    {curso.titulo}
+                  </a>
+                );
+              })}
           </div>
         </div>
         <div className="col-md-4 text-center contacto-footer pb-3">
@@ -52,7 +68,10 @@ export default function Footer() {
         </p>
         <div className="tench">
           <p className=" text-details">Creado por</p>
-          <a className=" text-details text-light" href="/">
+          <a
+            className=" text-details text-light"
+            href="https://tench-arg.web.app/"
+          >
             Tench
           </a>
         </div>

@@ -12,7 +12,7 @@ export default function AllCursos() {
     const dbRef = ref(db, "cursos/");
     get(dbRef).then((snap) => {
       const cursos = Object.values(snap.val());
-      console.log(cursos.length);
+
       if (cursos.length > 0 && cursos.length) {
         cursos.map((curso) => {
           setDataCursos((dataCursos) => [...dataCursos, curso]);
@@ -21,7 +21,6 @@ export default function AllCursos() {
     });
   }, []);
 
-  console.log(dataCursos);
   return (
     <div className="bg-light pt-5">
       <h1 className="text-dark text-center pb-5 text-title fw-bold">

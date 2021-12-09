@@ -52,10 +52,7 @@ export default function Navigation() {
               Generar Edu
             </Navbar.Brand>
           </Link>
-          <Navbar.Toggle
-            aria-controls="basic-navbar-nav"
-            className="border-0"
-          />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto align-items-end">
               <Link to="/">
