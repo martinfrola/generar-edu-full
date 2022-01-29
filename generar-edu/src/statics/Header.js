@@ -8,11 +8,8 @@ export default function Header() {
         <div className="bg-image slide-1"></div>
         <Carousel.Caption className="slide-text">
           <h1 className="text-dark fw-bold text-header">
-            LLEVANDOTE A LA PRÁCTICA
+            Tu mejor inversion es en conocimiento
           </h1>
-          <h3 className="text-dark text-subtitle">
-            Aprende a llevar a la práctica todos tus conocimientos!
-          </h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -20,12 +17,8 @@ export default function Header() {
 
         <Carousel.Caption className="slide-text">
           <h1 className="text-dark fw-bold text-header">
-            APRENDE SOBRE REHABILITACIÓN
+            Aprende a llevar tus conocimientos a la práctica
           </h1>
-          <h3 className="text-dark text-subtitle">
-            Aprende como abordar a distintos tipos de pacientes para diferentes
-            patologías
-          </h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -33,12 +26,8 @@ export default function Header() {
 
         <Carousel.Caption className="slide-text">
           <h1 className="text-dark fw-bold text-header">
-            ESTUDIA DESDE CUALQUIER PARTE DEL MUNDO
+            Docencia en constante aprendizaje
           </h1>
-          <h3 className="text-dark text-subtitle">
-            No importa donde estés, seguí capacitandote con nuestros cursos y
-            aprende a dar tus primeros pasos en la profesión
-          </h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
