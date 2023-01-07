@@ -14,11 +14,11 @@ export default function SobreNosotros() {
           Conoce más sobre nosotros
         </h2>
         <div className=" container text-center text-text text-light">
-          Generar Edu es un espacio digital que se creó y diseño para brindar la
-          posibilidad, acompañarte a transitar los primeros pasos en tu rol de
-          profesional de la salud, facilitándote herramientas básicas que logres
-          desde el análisis kinésico para planificar una evaluación y el
-          tratamiento de tus pacientes desde el conocimiento teórico llevándola
+          Generar Edu es un espacio digital creado para brindar la posibilidad
+          de acompañarte a transitar los primeros pasos en tu rol como
+          profesional de la salud, facilitándote herramientas básicas para que
+          logres desde el análisis completo, planificar una evaluación y el
+          tratamiento de tus pacientes desde el conocimiento teórico llevándolo
           a la práctica.
         </div>
         <div className="container img-renata">
@@ -30,24 +30,26 @@ export default function SobreNosotros() {
           <div className="text-light content-renata">
             <h4 className="text-secondary text-subtitle">Renata Britos</h4>
             <p className="text-text">
-              Me llamo, Renata Britos soy profesional de la salud titulada en la
+              Me llamo Renata Britos, soy profesional de la salud titulada en
               Lic. En kinesiología y Fisioterapia en la Universidad Nacional de
-              Córdoba Argentina hace 18 años, en el transcurso del tiempo me fui
-              formando y especializando en el área de la rehabilitación
-              neurológica.
+              Córdoba, Argentina, desde hace 18 años. Con el transcurso del
+              tiempo me fui formando y especializando en el área de la
+              rehabilitación neurológica.
             </p>
             <p className="text-text">
-              Trabajé durante muchos años en un instituto de rehabilitación
-              integral donde tuve la posibilidad de cumplir un cargo como Jefa
-              de Servicio de Rehabilitación.{" "}
+              Durante mi carrera profesional trabajé durante muchos años en un
+              instituto de rehabilitación integral de la ciudad de Bahía Blanca,
+              donde tuve la posibilidad de cumplir un cargo como Jefa de
+              Servicio de Rehabilitación.{" "}
             </p>
             <p className="text-text">
-              Me desempeñe consultorios privados tomando experiencia y
+              Me desempeñé en consultorios privados tomando experiencia y
               conocimiento en el área de traumatología.{" "}
             </p>
             <p className="text-text">
-              Fui Becaria durante un periodo de dos años en un hospital
-              municipal, en el área de clínica médica.
+              Fuí Becaria durante un período de dos años en el Hospital
+              Municipal de Agudos Dr. Leónidas Lucero, en el área de clínica
+              médica.
             </p>
             <p className="text-text">
               {" "}
